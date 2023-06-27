@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:GuillermoCAB/portfolioGCAB.git",
   "author": "GuillermoCAB <guiga.benitez@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^4.3.9"
+  }
 }
