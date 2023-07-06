@@ -1,0 +1,48 @@
+.btn {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn.primary.solid {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.btn.secondary.solid {
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
+.btn.primary.outlined {
+  background-color: transparent;
+  color: blue;
+  border: 2px solid blue;
+}
+
+.btn.secondary.outlined {
+  background-color: transparent;
+  color: gray;
+  border: 2px solid gray;
+}
+
+.btn.small {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+.btn.large {
+  font-size: 1.2rem;
+  padding: 15px 20px;
+}
+
+.btn.disabled {
+  background-color: lightgray;
+  color: darkgray;
+  cursor: not-allowed;
+}
