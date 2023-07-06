@@ -5,7 +5,6 @@ interface SEOProps {
   title: string;
   description: string;
   children: React.ReactNode;
-  children2: React.ReactNode;
 }
 
 const SEO: React.FC<SEOProps> = ({ title, description, children }) => {
