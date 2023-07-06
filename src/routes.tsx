@@ -1,4 +1,9 @@
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+
+// Pags
+import { Home } from './pages'
+
+// Components
 import SEO from "./components/SEO";
 
 function AppRouter() {
@@ -7,8 +12,7 @@ function AppRouter() {
       path: "/",
       element: (
         <SEO title="test" description="Testing the SEO component">
-          <h1>Hello World</h1>
-          <Link to="about">About Us</Link>
+          <Home />
         </SEO>
       ),
     },
