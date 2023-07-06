@@ -1,15 +1,15 @@
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 
 // Pags
-import { Home } from './pages'
+import { Home } from './pages';
 
 // Components
-import SEO from "./components/SEO";
+import SEO from './components/SEO';
 
 function AppRouter() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: '/',
       element: (
         <SEO title="test" description="Testing the SEO component">
           <Home />
@@ -17,7 +17,7 @@ function AppRouter() {
       ),
     },
     {
-      path: "about",
+      path: 'about',
       element: <div>About</div>,
     },
   ]);

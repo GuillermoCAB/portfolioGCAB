@@ -1,10 +1,11 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
 interface SEOProps {
   title: string;
   description: string;
   children: React.ReactNode;
+  children2: React.ReactNode;
 }
 
 const SEO: React.FC<SEOProps> = ({ title, description, children }) => {
