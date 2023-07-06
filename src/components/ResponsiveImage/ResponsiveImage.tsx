@@ -1,13 +1,5 @@
-import React from 'react'
-
-interface ResponsiveImageProps {
-  src: string
-  alt: string
-  width: number
-  height: number
-  className?: string
-  noLazy?: boolean
-}
+import React from 'react';
+import { ResponsiveImageProps } from './type';
 
 const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
   src,
@@ -15,11 +7,11 @@ const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
   width,
   height,
   className,
-  noLazy = false
+  noLazy = false,
 }) => {
-  const baseName = src.split('.').slice(0, -1).join('.')
-  const webpSrc = `${baseName}.webp`
-  const avifSrc = `${baseName}.avif`
+  const baseName = src.split('.').slice(0, -1).join('.');
+  const webpSrc = `${baseName}.webp`;
+  const avifSrc = `${baseName}.avif`;
 
   return (
     <div className={`responsive-image-wrapper ${className ?? ''}`}>
@@ -36,7 +28,7 @@ const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
         />
       </picture>
     </div>
-  )
-}
+  );
+};
 
-export default ResponsiveImage
+export default ResponsiveImage;
